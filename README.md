@@ -1,7 +1,7 @@
 #RESTFUL API风格规范
 &emsp;具象状态传输（英文：Representational State Transfer，简称REST）是Roy Thomas Fielding博士于2000年在他的博士论文["Architectural Styles and the Design of Network-based Software Architectures"](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) 中提出来的一种万维网软件架构风格。（[wiki百科](https://zh.wikipedia.org/wiki/REST)）
 
-######统一接口（Uniform Interface）
+####统一接口（Uniform Interface####
 	GET:从服务器取出一项或多项资源（select）
 	POST：新建一项或多项资源（create）
 	PUT：更新服务器的资源（update）Client提供完整的更新后的数据
@@ -34,14 +34,19 @@
 		好：/api/v20160910/Names/
 	6，不要把url参数写到api里，不好	/api/v20160910/Names？openid=“asdsadasdasads”
 	7，可以用url参数对资源进行过滤。
-######无状态 Statelessness 
+	
+####无状态 Statelessness####
 	对每个资源的请求，都不依赖其他资源，也不依赖其他请求
 	每个资源都有至少一个uri能对其定位,这个定位与其他资源无关，不会因为其他资源的变化而变化
-######可缓存 Cacheable 
+	
+####可缓存 Cacheable####
 	响应内容可以在通信链的某处被缓存，以提升性能。
-######客户-服务器 Client-Server
+	
+#####客户-服务器 Client-Server####
 	通信表现为request-response的形式，只能由Client单方面发起。
-######分层系统 Layered System
+	
+#####分层系统 Layered System####
 	通过限制组件的行为，每个组件只能“看到”与其交互的紧邻层，将架构分解为若干等级的层
-######按需代码（可选） Code on Demand (optional)
+	
+#####按需代码（可选） Code on Demand (optional)####
 支持通过下载并执行一些代码，对Client的功能进行扩展
