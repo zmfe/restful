@@ -1,7 +1,7 @@
 #RESTFUL API风格规范
 &emsp;具象状态传输（英文：Representational State Transfer，简称REST）是Roy Thomas Fielding博士于2000年在他的博士论文["Architectural Styles and the Design of Network-based Software Architectures"](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) 中提出来的一种万维网软件架构风格。（[wiki百科](https://zh.wikipedia.org/wiki/REST)）
 
-###统一接口（Uniform Interface###
+###统一接口Uniform Interface###
 	GET:从服务器取出一项或多项资源（select）
 	POST：新建一项或多项资源（create）
 	PUT：更新服务器的资源（update）Client提供完整的更新后的数据
